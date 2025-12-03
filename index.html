@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart 2.0 - Futuristic Shopping Experience</title>
+    <meta name="description" content="The next evolution of e-commerce with AI-powered shopping experience">
+<link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#f97316',
+                        accent: '#0ea5e9',
+                        dark: '#0f172a',
+                        light: '#1e293b'
+                    },
+fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-dark">
+<custom-navbar></custom-navbar>
+    
+    <!-- Hero Section -->
+    <section class="relative h-screen bg-gradient-to-br from-primary/10 to-accent/10 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-[url('http://static.photos/technology/1200x630/42')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent"></div>
+        </div>
+        <div class="container mx-auto px-6 h-full flex flex-col justify-center relative z-10">
+            <div class="max-w-3xl">
+                <div class="flex items-center justify-start mb-8 gap-4">
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="Flipkart" class="h-14 md:h-20">
+                    <div class="flex items-center">
+                        <span class="text-4xl md:text-5xl font-bold text-white">2.0</span>
+                        <span class="ml-3 text-xl md:text-2xl text-white/80 hidden sm:inline">| The Future of Shopping</span>
+                    </div>
+                </div>
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
+                    Shopping <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Reimagined</span>
+                </h1>
+                <div class="flex items-center gap-2 mb-6">
+                    <div class="w-6 h-6 bg-primary rounded-full"></div>
+                    <div class="w-6 h-6 bg-primary rounded-full animate-pulse"></div>
+                    <div class="w-6 h-6 bg-primary rounded-full"></div>
+                    <span class="ml-2 text-lg text-white/80">Powered by AI</span>
+                </div>
+<p class="text-xl md:text-2xl text-white/80 mb-10">
+                    Experience the future of e-commerce with AI-powered recommendations, AR previews, and lightning-fast delivery.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#products" class="px-8 py-4 bg-gradient-to-r from-primary to-accent text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        Explore Now
+                    </a>
+                    <a href="#demo" class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium rounded-lg hover:bg-white/20 transition-all duration-300">
+                        <div class="flex items-center gap-2">
+                            <i data-feather="play-circle"></i>
+                            Watch Demo
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-light to-transparent"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-slate-900">
+<div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Why Choose Flipkart 2.0?</h2>
+<p class="text-lg text-gray-600 max-w-2xl mx-auto">We're reinventing online shopping with cutting-edge technology</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-800 p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-700 hover:border-primary/20">
+<div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="zap" class="w-8 h-8 text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-3">AI-Powered Search</h3>
+                    <p class="text-gray-600">Our smart algorithms understand what you're looking for even before you finish typing.</p>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-700 hover:border-secondary/20">
+<div class="w-16 h-16 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="box" class="w-8 h-8 text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-3">Instant Delivery</h3>
+                    <p class="text-gray-600">90% of products delivered within 2 hours in metro cities through our hyperlocal network.</p>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-700 hover:border-accent/20">
+<div class="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="smartphone" class="w-8 h-8 text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-3">AR Preview</h3>
+                    <p class="text-gray-600">See how products look in your space before buying with our augmented reality feature.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section id="products" class="py-20 bg-gradient-to-b from-light to-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Trending This Week</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Curated collections based on what's hot right now</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product Card 1 -->
+                <div class="group bg-slate-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-slate-700">
+<div class="relative overflow-hidden h-64">
+                        <img src="http://static.photos/technology/640x360/1" alt="Product" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute top-4 right-4">
+                            <button class="bg-white/90 backdrop-blur-sm p-2 rounded-full shadow hover:bg-primary hover:text-white transition-colors">
+                                <i data-feather="heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">Smartphone X Pro</h3>
+                            <span class="bg-primary/10 text-primary text-sm px-2 py-1 rounded">New</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">Flagship camera with AI enhancements</p>
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-dark">₹49,999</span>
+                            <button class="text-sm bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Card 2 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="http://static.photos/technology/640x360/2" alt="Product" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">Wireless Earbuds Pro</h3>
+                            <span class="bg-secondary/10 text-secondary text-sm px-2 py-1 rounded">Bestseller</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">Active noise cancellation, 30hr battery</p>
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-dark">₹7,999</span>
+                            <button class="text-sm bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Card 3 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="http://static.photos/technology/640x360/3" alt="Product" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">Smart Watch Series 5</h3>
+                            <span class="bg-accent/10 text-accent text-sm px-2 py-1 rounded">Trending</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">Health monitoring, 2 week battery</p>
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-dark">₹12,999</span>
+                            <button class="text-sm bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Card 4 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="http://static.photos/technology/640x360/4" alt="Product" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">4K Smart TV 65"</h3>
+                            <span class="bg-secondary/10 text-secondary text-sm px-2 py-1 rounded">Deal</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">Dolby Vision, 120Hz refresh rate</p>
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-dark">₹59,999</span>
+                            <button class="text-sm bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-primary text-primary font-medium rounded-lg hover:bg-primary hover:text-white transition-colors">
+                    View All Products
+                    <i data-feather="arrow-right" class="ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Experience Section -->
+    <section class="py-20 bg-gradient-to-b from-slate-800 to-slate-900">
+<div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <div class="absolute -top-8 -left-8 w-32 h-32 bg-primary/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+                        <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-secondary/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20">
+                            <img src="http://static.photos/technology/1024x576/10" alt="AI Experience" class="w-full h-auto">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark/70 to-transparent flex items-end p-6">
+                                <div class="text-white">
+                                    <h3 class="text-xl font-semibold">"Alexa, order my usual"</h3>
+                                    <p class="text-white/80">Our AI remembers your preferences</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Smart Shopping Assistant</h2>
+                    <p class="text-lg text-gray-600 mb-8">Our AI learns your preferences over time to suggest products you'll love, help you reorder favorites, and even predict what you might need next.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <i data-feather="thumbs-up" class="text-primary"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-dark mb-1">Personalized Recommendations</h3>
+                                <p class="text-gray-600">Get suggestions tailored specifically to your taste and budget.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center">
+                                    <i data-feather="repeat" class="text-secondary"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-dark mb-1">Subscription Intelligence</h3>
+                                <p class="text-gray-600">We'll remind you when it's time to reorder essentials and can automate the process.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                                    <i data-feather="shield" class="text-accent"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-dark mb-1">Price Protection</h3>
+                                <p class="text-gray-600">If the price drops within 15 days of purchase, we'll refund the difference automatically.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-slate-900">
+<div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">What Our Customers Say</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Trusted by millions of happy shoppers across India</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-slate-800 p-8 rounded-xl shadow-md border border-slate-700">
+<div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/1" alt="Customer" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-dark">Rajesh K.</h4>
+                            <div class="flex text-yellow-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The AR preview feature saved me from buying a couch that wouldn't fit in my living room. Amazing tech!"</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/2" alt="Customer" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-dark">Priya M.</h4>
+                            <div class="flex text-yellow-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Got my order in just 47 minutes! The speed is unbelievable and the packaging was eco-friendly."</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/3" alt="Customer" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-dark">Amit S.</h4>
+                            <div class="flex text-yellow-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The AI recommendations are scarily accurate. It suggested a book I was planning to buy but hadn't searched for!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clothes Shopping Section -->
+    <section class="py-20 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Fashion & Clothing</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Latest trends in men's and women's fashion</p>
+            </div>
+            
+            <!-- Special Offers Banner -->
+            <div class="bg-gradient-to-r from-pink-500 to-purple-500 p-6 rounded-xl mb-12">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-xl md:text-2xl font-bold text-white">👗 Fashion Sale!</h3>
+                        <p class="text-white/90">Get 30-50% off on top brands this week</p>
+                    </div>
+                    <a href="#" class="px-6 py-2 bg-white text-pink-600 font-medium rounded-lg hover:bg-white/90 transition-colors">
+                        View All Offers
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Clothing Card 1 - Women's Dress -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-80">
+                        <img src="http://static.photos/fashion/640x360/1" alt="Women's Dress" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">50% OFF</div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">Floral Maxi Dress</h3>
+                            <span class="bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded">Women</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">Lightweight summer dress with floral print</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-bold text-dark">₹899</span>
+                                <span class="text-xs text-gray-500 line-through">₹1,799</span>
+                            </div>
+                            <button class="text-sm bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition-colors">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Clothing Card 2 - Men's Shirt -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-80">
+                        <img src="http://static.photos/fashion/640x360/2" alt="Men's Shirt" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-bold">30% OFF</div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">Slim Fit Shirt</h3>
+                            <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">Men</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">Formal slim fit shirt with premium fabric</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-bold text-dark">₹1,199</span>
+                                <span class="text-xs text-gray-500 line-through">₹1,699</span>
+                            </div>
+                            <button class="text-sm bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Clothing Card 3 - Unisex Sneakers -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-80">
+                        <img src="http://static.photos/fashion/640x360/3" alt="Sneakers" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">NEW</div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">Premium Sneakers</h3>
+                            <span class="bg-green-100 text-green-600 text-xs px-2 py-1 rounded">Unisex</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">Comfortable athletic shoes with cushioned soles</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-bold text-dark">₹2,499</span>
+                            </div>
+                            <button class="text-sm bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Clothing Card 4 - Women's Handbag -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-80">
+                        <img src="http://static.photos/fashion/640x360/4" alt="Handbag" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-purple-500 text-white px-2 py-1 rounded-full text-xs font-bold">40% OFF</div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">Designer Handbag</h3>
+                            <span class="bg-purple-100 text-purple-600 text-xs px-2 py-1 rounded">Women</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">Premium leather handbag with multiple compartments</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-bold text-dark">₹3,599</span>
+                                <span class="text-xs text-gray-500 line-through">₹5,999</span>
+                            </div>
+                            <button class="text-sm bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600 transition-colors">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-medium rounded-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                    Browse All Fashion
+                    <i data-feather="arrow-right" class="ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicle Shopping Section -->
+<section class="py-20 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Vehicle Marketplace</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Find your perfect ride with our certified pre-owned vehicles and bikes</p>
+            </div>
+            
+            <!-- Special Offers Banner -->
+            <div class="bg-gradient-to-r from-primary to-accent p-6 rounded-xl mb-12">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-xl md:text-2xl font-bold text-white">🚀 Special Discounts!</h3>
+                        <p class="text-white/90">Get up to 15% off on select cars and 10% off on premium bikes this week</p>
+                    </div>
+                    <a href="/vehicles.html" class="px-6 py-2 bg-white text-primary font-medium rounded-lg hover:bg-white/90 transition-colors">
+                        View All Offers
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Vehicle Card 1 - Car with Offer -->
+                <div class="group bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-primary/20">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="http://static.photos/automotive/640x360/1" alt="Vehicle" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold">15% OFF</div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">Hyundai Creta 2022</h3>
+                            <span class="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Certified</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="text-xs bg-primary/10 px-2 py-1 rounded">15,000 km</span>
+                            <span class="text-xs bg-primary/10 px-2 py-1 rounded">Petrol</span>
+                            <span class="text-xs bg-primary/10 px-2 py-1 rounded">Automatic</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-bold text-dark block">₹12.5 Lakh</span>
+                                <span class="text-xs text-gray-500 line-through">₹14.7 Lakh</span>
+                                <span class="text-xs text-primary">Save ₹2.2 Lakh</span>
+                            </div>
+                            <a href="/vehicles.html" class="text-sm bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+                                View Offer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vehicle Card 2 - Bike with Offer -->
+                <div class="group bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-secondary/20">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="http://static.photos/automotive/640x360/2" alt="Bike" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold">10% OFF</div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">Royal Enfield Classic 350</h3>
+                            <span class="bg-secondary/10 text-secondary text-sm px-2 py-1 rounded">Low KM</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="text-xs bg-secondary/10 px-2 py-1 rounded">4,500 km</span>
+                            <span class="text-xs bg-secondary/10 px-2 py-1 rounded">Petrol</span>
+                            <span class="text-xs bg-secondary/10 px-2 py-1 rounded">5-speed</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-bold text-dark block">₹1.85 Lakh</span>
+                                <span class="text-xs text-gray-500 line-through">₹2.05 Lakh</span>
+                                <span class="text-xs text-secondary">Save ₹20,000</span>
+                            </div>
+                            <a href="/vehicles.html" class="text-sm bg-secondary text-white px-4 py-2 rounded-lg hover:bg-secondary/90 transition-colors">
+                                View Offer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vehicle Card 3 - Car -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="http://static.photos/automotive/640x360/3" alt="Vehicle" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">Maruti Suzuki Swift 2021</h3>
+                            <span class="bg-accent/10 text-accent text-sm px-2 py-1 rounded">1 Owner</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="text-xs bg-gray-200 px-2 py-1 rounded">22,000 km</span>
+                            <span class="text-xs bg-gray-200 px-2 py-1 rounded">Petrol</span>
+                            <span class="text-xs bg-gray-200 px-2 py-1 rounded">Manual</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-bold text-dark block">₹6.25 Lakh</span>
+                                <span class="text-xs text-gray-500">EMI: ₹11,456/mo</span>
+                            </div>
+                            <a href="/vehicles.html" class="text-sm bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vehicle Card 4 - Premium Bike -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="http://static.photos/automotive/640x360/4" alt="Bike" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold">NEW</div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">KTM Duke 390</h3>
+                            <span class="bg-accent/10 text-accent text-sm px-2 py-1 rounded">2023 Model</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="text-xs bg-gray-200 px-2 py-1 rounded">1,200 km</span>
+                            <span class="text-xs bg-gray-200 px-2 py-1 rounded">Petrol</span>
+                            <span class="text-xs bg-gray-200 px-2 py-1 rounded">6-speed</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-bold text-dark block">₹3.25 Lakh</span>
+                                <span class="text-xs text-gray-500">EMI: ₹5,456/mo</span>
+                            </div>
+                            <a href="/vehicles.html" class="text-sm bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+</div>
+            <div class="text-center mt-12">
+                <a href="/vehicles.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary to-accent text-white font-medium rounded-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                    Browse All Cars & Bikes
+<i data-feather="arrow-right" class="ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-primary to-accent text-white">
+<div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-2/3 mb-8 md:mb-0">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to experience the future of shopping?</h2>
+                    <p class="text-white/90 max-w-2xl">Download the Flipkart 2.0 app for exclusive features and faster checkout.</p>
+</div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#" class="px-6 py-3 bg-white text-primary font-medium rounded-lg hover:bg-white/90 transition-colors flex items-center justify-center gap-2">
+                        <i data-feather="download"></i>
+                        <span>App Store</span>
+                    </a>
+                    <a href="#" class="px-6 py-3 bg-dark text-white font-medium rounded-lg hover:bg-dark/90 transition-colors flex items-center justify-center gap-2">
+                        <i data-feather="download"></i>
+                        <span>Play Store</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <!-- Mobile Search Bar -->
+    <div id="mobile-search" class="fixed top-16 left-0 right-0 bg-slate-800 p-4 shadow-lg hidden md:hidden z-40">
+        <div class="relative">
+            <input type="text" placeholder="Search products..." 
+                class="bg-slate-700 border border-slate-600 text-white rounded-lg px-4 py-2 pl-10 w-full focus:outline-none focus:ring-2 focus:ring-primary">
+            <i data-feather="search" class="absolute left-3 top-2.5 text-slate-400"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+<script>
+        feather.replace();
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
